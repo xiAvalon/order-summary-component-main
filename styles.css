@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: var(--Pale-blue);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.card{
+    width: 380px;
+    height: 400px;
+    border-radius: 0 0 12px 12px;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 5px 15px 2px var(--Dark-blue);
+}
+
+.card-top{
+    background-image: url(images/illustration-hero.svg);
+    height: 190px;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    width: 80%;
+    gap: 1rem;
+}
+
+.card-content > p{
+    color: var(--Desaturated-blue);
+}
+
+.card-pricing{
+    width: 310px;
+    height: 80px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.card-pricing > a{
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+
+.price{
+    display: inline-block;
+    margin-right: 2.5rem;
+}
+
+.card-bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+button{
+    width: 280px;
+    height: 50px;
+    background-color: var(--Bright-blue);
+    color: white;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 20px 20px 0 var(--Pale-blue);
+    font-weight: 700;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--Desaturated-blue);
+}
+
+.card-bottom > a{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+}
+
+.card-bottom > a:hover{
+    cursor: pointer;
+    color: var(--Dark-blue);
+}
